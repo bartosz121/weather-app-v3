@@ -1,3 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap');
+
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+body {
+	font-family: 'Raleway', sans-serif;
+	-ms-overflow-style: scrollbar;
+}
+
+.leaflet-control {
+	font-family: 'Raleway', sans-serif;
+}
+
+.leaflet-center {
+	left: 50%;
+	transform: translate(-50%, 0%);
+}
+
+/* Modern Firefox */
+* {
+	scrollbar-width: thin;
+	scrollbar-color: rgba(255, 255, 255, 1) rgba(255, 255, 255, 0.3);
+}
+
+/* WebKit browsers (Chrome, Safari, Opera) */
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+	border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+	background: rgba(255, 255, 255, 0.3);
+	border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgba(255, 255, 255, 1);
+	border-radius: 10px;
+	border: 2px solid transparent;
+	background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: rgba(255, 255, 255, 0.9);
+	border: 2px solid transparent;
+	background-clip: padding-box;
+}
+
+/* Edge specific styles */
+@supports (-ms-overflow-style: none) {
+	* {
+		scrollbar-width: thin;
+		scrollbar-color: rgba(255, 255, 255, 1) rgba(255, 255, 255, 0.3);
+	}
+}
+
+/* Optional: Hide scrollbar when not scrolling */
+.hide-scrollbar::-webkit-scrollbar {
+	display: none;
+}
+
+.hide-scrollbar {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}

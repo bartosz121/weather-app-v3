@@ -16,10 +16,14 @@
 	},
 	"devDependencies": {
 		"@eslint/compat": "^1.2.3",
+		"@iconify-json/wi": "^1.2.1",
 		"@playwright/test": "^1.45.3",
-		"@sveltejs/adapter-node": "^5.2.9",
-		"@sveltejs/kit": "^2.9.0",
+		"@sveltejs/adapter-node": "^5.2.12",
+		"@sveltejs/enhanced-img": "^0.4.4",
+		"@sveltejs/kit": "^2.16.0",
 		"@sveltejs/vite-plugin-svelte": "^5.0.0",
+		"@types/blake2": "^4.0.4",
+		"@types/leaflet": "^1.9.16",
 		"autoprefixer": "^10.4.20",
 		"eslint": "^9.7.0",
 		"eslint-config-prettier": "^9.1.0",
@@ -28,7 +32,7 @@
 		"prettier": "^3.3.2",
 		"prettier-plugin-svelte": "^3.2.6",
 		"prettier-plugin-tailwindcss": "^0.6.5",
-		"svelte": "^5.0.0",
+		"svelte": "^5.19.9",
 		"svelte-check": "^4.0.0",
 		"tailwindcss": "^3.4.9",
 		"typescript": "^5.0.0",
@@ -36,8 +40,15 @@
 		"vite": "^6.0.0"
 	},
 	"dependencies": {
+		"@google/generative-ai": "0.21.0",
 		"@tailwindcss/container-queries": "^0.1.1",
 		"@tailwindcss/forms": "^0.5.9",
-		"@tailwindcss/typography": "^0.5.15"
+		"@tailwindcss/typography": "^0.5.15",
+		"blakejs": "^1.2.1",
+		"dotenv": "^16.4.7",
+		"leaflet": "^1.9.4",
+		"temporal-polyfill": "^0.2.5",
+		"unplugin-icons": "^0.22.0",
+		"zod": "^3.25.0-canary.20241210T225910"
 	}
 }
