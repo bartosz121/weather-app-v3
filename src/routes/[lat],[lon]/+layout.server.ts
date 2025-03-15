@@ -102,7 +102,7 @@ const aiResponseSchema = {
 
 const genAi = new GoogleGenerativeAI(GOOGLE_AI_API_KEY);
 const model = genAi.getGenerativeModel({
-	model: 'gemini-1.5-flash',
+	model: 'gemini-2.0-flash-lite',
 	generationConfig: { responseMimeType: 'application/json', responseSchema: aiResponseSchema }
 });
 
